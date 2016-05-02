@@ -1,0 +1,19 @@
+{
+  "name": "pan",
+  "version": "0.0.1",
+  "description": "Pan is a companion note keeper",
+  "main": "pan.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha pan.test.js"
+  },
+  "keywords": [
+    "pan"
+  ],
+  "author": "rpass",
+  "license": "ISC"
+}
