@@ -3,9 +3,15 @@
   "version": "0.0.1",
   "description": "Pan is a companion note keeper",
   "main": "pan.js",
-  "dependencies": {},
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.18",
+    "mongoose": "^4.4.14"
+  },
   "devDependencies": {
     "chai": "*",
+    "frisby": "^0.8.5",
     "mocha": "*"
   },
   "scripts": {

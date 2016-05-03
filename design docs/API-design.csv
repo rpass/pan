@@ -1,0 +1,8 @@
+route; verb; description; variables
+/note/create; post; create a new note with text content; content
+/note/<id>; get; get the note with _id = <id>; id
+/note/<id>/edit; put; update a note with text content; content, id
+/reminder/create; post; create new reminder with content, that triggers at a deadline, repeats itself if set to, at the frequency defined, and until the repeat limit is reached; content, repeating flag, trigger, repeating frequency, repeat limit
+/reminder/<id>/close; put; set a reminder to stop reminding you; id
+/reminder/<id>/edit; put; update a reminder with content; id, content
+/reminder/<id>; get; get the reminder; id
