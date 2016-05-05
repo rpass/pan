@@ -12,7 +12,8 @@
   "devDependencies": {
     "chai": "*",
     "frisby": "^0.8.5",
-    "mocha": "*"
+    "mocha": "*",
+    "nodemon": "^1.9.2"
   },
   "scripts": {
     "test": "mocha pan.test.js"

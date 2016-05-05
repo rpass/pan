@@ -1,17 +1,17 @@
-var express = require('express');
-var mongoose = require('mongoose');
-var dbURL = require('./config.js').db.testUrl;
+'use strict'
 
-var app = express();
-var port = 8080;
-mongoose.connect(dbURL);
+let express = require('express');
+let mongoose = require('mongoose');
+let dbURL = require('./config.js').db.testUrl;
+let notesRouter = require('./notes/router.js');
 
-app.use(function(req, res, next){
-  res.status(404);
-  res.json({error: 'Invalid URL'});
+let app = express();
+let port = 8080;
+
+app.use('/api/notes', notesRouter)
+
+app.listen(port, function() {
+  console.log('Server has started on port ' + port);
 });
 
-app.listen(port);
-
-console.log('Server has started on port ' + port);
 module.exports = app;
