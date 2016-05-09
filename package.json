@@ -7,16 +7,18 @@
     "async": "^2.0.0-rc.3",
     "express": "^4.13.4",
     "mongodb": "^2.1.18",
-    "mongoose": "^4.4.14"
+    "mongoose": "^4.4.14",
+    "winston": "^2.2.0"
   },
   "devDependencies": {
     "chai": "*",
     "frisby": "^0.8.5",
+    "jasmine": "^2.4.1",
     "mocha": "*",
     "nodemon": "^1.9.2"
   },
   "scripts": {
-    "test": "mocha pan.test.js"
+    "test": "mocha tests/pan.test.js"
   },
   "keywords": [
     "pan"
